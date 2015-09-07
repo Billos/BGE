@@ -1,2 +1,2 @@
-# tock-server
-Server for the Tock game
+# BGE
+Board Game Engine

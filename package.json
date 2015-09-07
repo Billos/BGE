@@ -1,24 +1,25 @@
 {
-  "name": "tock-server",
+  "name": "bge",
   "version": "1.0.0",
-  "description": "Tock server",
+  "description": "Board Game Engine",
   "scripts": {
-    "test": "node server.js"
+    "test": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Billos/tock-server.git"
+    "url": "git+https://github.com/Billos/BGE.git"
   },
   "keywords": [
-    "tock",
+    "board",
     "node",
+    "engine",
     "game",
     "server"
   ],
   "author": "bgoubin",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/Billos/tock-server/issues"
+    "url": "https://github.com/Billos/BGE/issues"
   },
-  "homepage": "https://github.com/Billos/tock-server#readme"
+  "homepage": "https://github.com/Billos/BGE#readme"
 }
