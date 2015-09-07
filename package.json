@@ -1,0 +1,24 @@
+{
+  "name": "tock-server",
+  "version": "1.0.0",
+  "description": "Tock server",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Billos/tock-server.git"
+  },
+  "keywords": [
+    "tock",
+    "node",
+    "game",
+    "server"
+  ],
+  "author": "bgoubin",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Billos/tock-server/issues"
+  },
+  "homepage": "https://github.com/Billos/tock-server#readme"
+}
