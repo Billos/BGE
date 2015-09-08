@@ -31,7 +31,7 @@ module.exports = function Game(name, cardsType){
    };
 
    this.cut = function(){
- 
+
       var rand = Math.floor((Math.random() * this.deck.length) + 1);
 
       console.log(rand)
