@@ -1,7 +1,7 @@
 var Player = require('./player')
-var Game = require('./game')
 
 module.exports = function Server(){
+
 
    this.games = [];
    this.players = [];
@@ -11,15 +11,19 @@ module.exports = function Server(){
       this.players.push(player);
       return player;
    };
-   this.rmPlayer = function(name){};
+
+   this.rmPlayer = function(name){
+
+   };
 
    this.listPlayers = function(){
       console.log("-------------------");
       this.players.forEach(function(e){console.log(e)});
    };
 
-   this.createGame = function(name, type){
-      var game = new Game(name, type)
+   this.createGame = function(game){
+      var GameType = require('./gameType/'+game)
+      var game = new GameType(game);
       this.games.push(game);
       return game;
    };
