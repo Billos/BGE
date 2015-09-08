@@ -1,25 +1,28 @@
 {
-  "name": "bge",
-  "version": "1.0.0",
-  "description": "Board Game Engine",
-  "scripts": {
-    "test": "node app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Billos/BGE.git"
-  },
-  "keywords": [
-    "board",
-    "node",
-    "engine",
-    "game",
-    "server"
-  ],
-  "author": "bgoubin",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/Billos/BGE/issues"
-  },
-  "homepage": "https://github.com/Billos/BGE#readme"
+   "name": "bge",
+   "version": "1.0.0",
+   "description": "Board Game Engine",
+   "scripts": {
+      "test": "node app.js"
+   },
+   "dependencies": {
+      "shuffle-array": "*"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Billos/BGE.git"
+   },
+   "keywords": [
+      "board",
+      "node",
+      "engine",
+      "game",
+      "server"
+   ],
+   "author": "bgoubin",
+   "license": "BSD-3-Clause",
+   "bugs": {
+      "url": "https://github.com/Billos/BGE/issues"
+   },
+   "homepage": "https://github.com/Billos/BGE#readme"
 }

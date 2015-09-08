@@ -1,4 +1,5 @@
-var Client = require('./client')
+var Player = require('./player')
+var Game = require('./game')
 
 module.exports = function Server(){
 
@@ -6,18 +7,28 @@ module.exports = function Server(){
    this.players = [];
 
    this.addPlayer = function(name){
-      this.players.push(new Client(name))
+      var player = new Player(name);
+      this.players.push(player);
+      return player;
    };
    this.rmPlayer = function(name){};
+
    this.listPlayers = function(){
-      console.log("-----")
+      console.log("-------------------");
       this.players.forEach(function(e){console.log(e)});
    };
 
-   this.createGame = function(name){};
+   this.createGame = function(name, type){
+      var game = new Game(name, type)
+      this.games.push(game);
+      return game;
+   };
    this.destroyGame = function(name){};
 
-   this.assignPlayer = function(player, game){};
+   this.assignPlayer = function(player, game){
+      game.players.push(player);
+      this.players.pop(player);
+   };
 
    this.start = function(){};
    this.stop = function(){};
