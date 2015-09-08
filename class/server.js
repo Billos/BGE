@@ -30,8 +30,14 @@ module.exports = function Server(){
    this.destroyGame = function(name){};
 
    this.assignPlayer = function(player, game){
-      game.players.push(player);
-      this.players.pop(player);
+      for (var i = 0; i < this.players.length; i++) {
+         if(this.players[i] == player){
+            game.players.push(player);
+            this.players.splice(i,1);
+            return true;
+         }
+      }
+      return false;
    };
 
    this.start = function(){};
