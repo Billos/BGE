@@ -22,7 +22,7 @@ module.exports = function Server(){
    };
 
    this.createGame = function(game){
-      var GameType = require('./gameType/'+game)
+      var GameType = require('./game/'+game)
       var game = new GameType(game);
       this.games.push(game);
       return game;
